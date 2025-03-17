@@ -120,8 +120,8 @@ The IoT-Based Agro Car Web Server acts as a bridge between ESP32, a Machine Lear
 ## Installation and Setup
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/your-repository.git
-cd your-repository
+git clone https://github.com/your-repository.git](https://github.com/arka-senpaii/Krishi_Mirtra
+cd Krishi_Mitra
 ```
 
 ### 2. Install Dependencies
