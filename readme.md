@@ -1,4 +1,4 @@
-# IoT-Based Agro Car Web Server
+# Krishi Mitra
 
 ## Overview
 The IoT-Based Agro Car Web Server acts as a bridge between ESP32, a Machine Learning (ML) model, and Firebase for real-time data storage and retrieval. The web server handles user authentication, real-time sensor data display, data forwarding to the ML model, and results visualization.
@@ -147,8 +147,9 @@ npm start
 - Optimize ML model accuracy.
 
 ## Contributors
-- **[Your Name]** - Project Lead
-- **[Team Members]** - Developers
+- **Arka Mahajan** - Project Lead
+- **Ishika Haldar** - Developers
+- **Sayan Mukherjee** - Developers
 
 ## License
 This project is licensed under the MIT License.
