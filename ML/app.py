@@ -1,18 +1,25 @@
+!pip install flask-ngrok pyngrok
 from flask import Flask, request, jsonify, render_template
 import joblib
 import numpy as np
 from pyngrok import ngrok
-ngrok authtoken cr_2uO4Iw5ULRRHhtf14lYV69Bg2cr
+import os
+from google.colab import drive
+drive.mount('/content/drive')
+# Install and set up ngrok (Run this command in Google Colab separately)
+# !pip install flask-ngrok pyngrok
 
+# Set your ngrok authentication token
+!ngrok authtoken Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 # Load trained model and encoders
-model = joblib.load("crop_prediction_model.pkl")
-label_encoders = joblib.load("label_encoders.pkl")
+model = joblib.load("/content/drive/MyDrive/ML/crop_prediction_model.pkl")
+label_encoders = joblib.load("/content/drive/MyDrive/ML/label_encoders.pkl")
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template("index.html")
+    return "Crop Prediction API is running!"
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -47,7 +54,8 @@ def predict():
 
 if __name__ == '__main__':
     # Start ngrok tunnel for Flask app
-    public_url = ngrok.connect(5000).public_url
+    port = 5000
+    public_url = ngrok.connect(port).public_url
     print(f"Public URL: {public_url}")
-    
-    app.run(debug=True)
+
+    app.run(port=port)
