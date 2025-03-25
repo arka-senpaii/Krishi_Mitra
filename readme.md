@@ -154,3 +154,11 @@ npm start
 ## License
 This project is licensed under the MIT License.
 
+## Project Image
+![WhatsApp Image 2025-03-08 at 16 29 14_c6d2534c](https://github.com/user-attachments/assets/b791ed32-5f3d-43cf-95dd-25f97eed3c8c)
+## ML Training 
+![tree_visualization (1)](https://github.com/user-attachments/assets/d262c5b5-281e-4c76-9582-00e95e691357)
+![download (1)](https://github.com/user-attachments/assets/7e50597d-9008-4c22-97fe-16625205ff89)
+![download (3)](https://github.com/user-attachments/assets/5add8f31-13d1-41d6-8558-8866effa4ad2)
+![download (2)](https://github.com/user-attachments/assets/d7899f05-eb08-4677-862a-d390e499e164)
+![download (4)](https://github.com/user-attachments/assets/ce70e1a7-6d37-487a-9c02-18d684d4e2fc)
