@@ -29,17 +29,13 @@ The IoT-Based Agro Car Web Server acts as a bridge between ESP32, a Machine Lear
 - FS-i10B (For controlling the IoT car)
 
 ### Backend
-- **Framework:** Flask (Python) / Django (Python) / Node.js (JavaScript)
 - **Database:** Firebase (NoSQL database for real-time storage)
 - **ML Integration:** API calls to an external ML model
-- **Hosting:** AWS / Heroku / DigitalOcean
-- **API Communication:** REST API using FastAPI/Express.js
 
 ### Frontend
-- **Framework:** React.js / Vue.js
-- **UI Design:** Tailwind CSS / Bootstrap
-- **Charts & Visualization:** Chart.js / D3.js
-- **State Management:** Redux / Vuex
+-**HTML**
+-**CSS**
+-**JS**
 
 ### Communication Protocols
 - **ESP32 to Web Server:** HTTP / HTTPS (via REST API)
