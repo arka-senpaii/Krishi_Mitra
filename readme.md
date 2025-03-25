@@ -33,9 +33,9 @@ The IoT-Based Agro Car Web Server acts as a bridge between ESP32, a Machine Lear
 - **ML Integration:** API calls to an external ML model
 
 ### Frontend
--**HTML**
--**CSS**
--**JS**
+- **HTML**
+- **CSS**
+- **JS**
 
 ### Communication Protocols
 - **ESP32 to Web Server:** HTTP / HTTPS (via REST API)
