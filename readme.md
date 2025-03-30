@@ -140,7 +140,11 @@ This project is licensed under the MIT License.
 ## Project Image
 ![WhatsApp Image 2025-03-08 at 16 29 14_c6d2534c](https://github.com/user-attachments/assets/b791ed32-5f3d-43cf-95dd-25f97eed3c8c)
 ## ML Training 
-![download (1)](https://github.com/user-attachments/assets/7e50597d-9008-4c22-97fe-16625205ff89)
-![download (3)](https://github.com/user-attachments/assets/5add8f31-13d1-41d6-8558-8866effa4ad2)
-![download (2)](https://github.com/user-attachments/assets/d7899f05-eb08-4677-862a-d390e499e164)
-![download (4)](https://github.com/user-attachments/assets/ce70e1a7-6d37-487a-9c02-18d684d4e2fc)
+![download (5)](https://github.com/user-attachments/assets/f6447acb-6dfc-4060-8f69-0f3592362b1e)
+![download (6)](https://github.com/user-attachments/assets/1bec8303-3f20-479e-99e1-5773db65218c)
+![download (7)](https://github.com/user-attachments/assets/e07e6195-a836-40f3-b1d7-34197526d2d4)
+![download (8)](https://github.com/user-attachments/assets/579533ca-9d9d-45dd-a359-7b0d2a2a44a8)
+![download (9)](https://github.com/user-attachments/assets/1771c055-8145-46b7-a40c-cca18c2306fd)
+![download (10)](https://github.com/user-attachments/assets/3b9b12a5-2e96-4a94-a08c-78d84df57217)
+![download (11)](https://github.com/user-attachments/assets/080c805c-1cf6-40ef-8cfc-b2322461a412)
+
