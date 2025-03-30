@@ -1,23 +1,20 @@
-# Krishi Mitra
+# Krishi Mitra - Python GUI Based IoT Agro Car
 
 ## Overview
-The IoT-Based Agro Car Web Server acts as a bridge between ESP32, a Machine Learning (ML) model, and Firebase for real-time data storage and retrieval. The web server handles user authentication, real-time sensor data display, data forwarding to the ML model, and results visualization.
+Krishi Mitra is a Python-based GUI application that acts as an interface between ESP32, a Machine Learning (ML) model, and Firebase for real-time agricultural data storage and analysis. The GUI provides user authentication, real-time sensor data display, ML-based crop prediction, and data visualization to help farmers make informed decisions.
 
 ## Features
-### User Authentication
-- Login Page
-- Register Page (with location, soil type, and irrigation type)
 
-### Dashboard
+### Dashboard (Python GUI)
 - Real-time sensor data from ESP32
 - Crop prediction based on ML model response
-- Data visualization for farmers
+- Graphical data visualization for farmers
 
 ### Data Flow
-1. ESP32 sends real-time data to the web server.
-2. The web server forwards this data to an ML model endpoint.
+1. ESP32 sends real-time data to the Python GUI via serial communication.
+2. The GUI forwards this data to an ML model endpoint.
 3. The ML model responds with crop predictions.
-4. The web server displays predictions and sensor data to the user.
+4. The GUI displays predictions and sensor data to the user.
 5. Data is stored in Firebase for historical analysis.
 
 ## Tech Stack
@@ -28,31 +25,36 @@ The IoT-Based Agro Car Web Server acts as a bridge between ESP32, a Machine Lear
 - Power Supply (Battery/Adapter)
 - FS-i10B (For controlling the IoT car)
 
-### Backend
+### Software
+- **Python GUI:** Tkinter / PyQt / Kivy
 - **Database:** Firebase (NoSQL database for real-time storage)
 - **ML Integration:** API calls to an external ML model
 
-### Frontend
-- **HTML**
-- **CSS**
-- **JS**
-
 ### Communication Protocols
-- **ESP32 to Web Server:** HTTP / HTTPS (via REST API)
-- **Web Server to ML Model:** HTTP API calls
-- **Web Server to Firebase:** Realtime Database API
+- **ESP32 to Python GUI:** Serial Communication (UART)
+- **Python GUI to ML Model:** HTTP API calls
+- **Python GUI to Firebase:** Realtime Database API
 
-### Development Tools
-- **Code Editor:** VS Code / PyCharm / Sublime Text
-- **Version Control:** Git / GitHub
-- **API Testing:** Postman
-- **Containerization:** Docker (optional for deployment)
+## Installation and Setup
+### 1. Clone the Repository
+```sh
+git clone https://github.com/arka-senpaii/Krishi_Mirtra
+cd Krishi_Mitra
+```
+
+### 2. Install Dependencies
+```sh
+pip install tkinter pyserial requests firebase-admin matplotlib
+```
+
+### 3. Connect ESP32 and Run the GUI
+```sh
+python main.py
+```
 
 ## API Endpoints
-### ESP32 Data Submission
-**Endpoint:** `/api/data`  
-**Method:** POST  
-**Payload:**
+### ESP32 Data Submission (Received in Python GUI via Serial)
+**Format:**
 ```json
 {
     "Temperature": 50.0,
@@ -77,8 +79,7 @@ The IoT-Based Agro Car Web Server acts as a bridge between ESP32, a Machine Lear
 }
 ```
 
-### ML Model Response
-**Response Example:**
+### ML Model Response Example
 ```json
 {
     "All Probabilities": {
@@ -107,48 +108,34 @@ The IoT-Based Agro Car Web Server acts as a bridge between ESP32, a Machine Lear
 - Enables historical analysis and visualization.
 
 ## System Architecture
-1. **ESP32** → Sends data to → **Web Server**
-2. **Web Server** → Forwards data to → **ML Model**
-3. **ML Model** → Sends predictions to → **Web Server**
-4. **Web Server** → Displays predictions on → **Dashboard**
-5. **Web Server** → Stores data in → **Firebase**
-
-## Installation and Setup
-### 1. Clone the Repository
-```sh
-git clone https://github.com/your-repository.git](https://github.com/arka-senpaii/Krishi_Mirtra
-cd Krishi_Mitra
-```
-
-### 2. Install Dependencies
-```sh
-pip install flask firebase-admin requests
-```
-
-### 3. Run the Web Server
-```sh
-python app.py
-```
-
-### 4. Frontend Setup
-```sh
-cd frontend
-npm install
-npm start
-```
+1. **ESP32** → Sends data to → **Python GUI via Serial Communication**
+2. **Python GUI** → Forwards data to → **ML Model**
+3. **ML Model** → Sends predictions to → **Python GUI**
+4. **Python GUI** → Displays predictions on → **Dashboard**
+5. **Python GUI** → Stores data in → **Firebase**
 
 ## Future Enhancements
 - Implement multi-language support for farmers.
 - Add mobile app support.
 - Optimize ML model accuracy.
+- Improve GUI with additional graphing features.
 
 ## Contributors
 - **Arka Mahajan** - Project Lead
-- **Ishika Haldar** - Developers
-- **Sayan Mukherjee** - Developers
+- **Ishika Haldar** - Developer
+- **Sayan Mukherjee** - Developer
 
 ## License
 This project is licensed under the MIT License.
+
+## Project Images
+![Krishi Mitra GUI](https://github.com/user-attachments/assets/b791ed32-5f3d-43cf-95dd-25f97eed3c8c)
+
+## ML Training
+![Training Image 1](https://github.com/user-attachments/assets/7e50597d-9008-4c22-97fe-16625205ff89)
+![Training Image 2](https://github.com/user-attachments/assets/5add8f31-13d1-41d6-8558-8866effa4ad2)
+![Training Image 3](https://github.com/user-attachments/assets/d7899f05-eb08-4677-862a-d390e499e164)
+![Training Image 4](https://github.com/user-attachments/assets/ce70e1a7-6d37-487a-9c02-18d684d4e2fc)
 
 ## Project Image
 ![WhatsApp Image 2025-03-08 at 16 29 14_c6d2534c](https://github.com/user-attachments/assets/b791ed32-5f3d-43cf-95dd-25f97eed3c8c)
