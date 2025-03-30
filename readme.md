@@ -128,15 +128,6 @@ python main.py
 ## License
 This project is licensed under the MIT License.
 
-## Project Images
-![Krishi Mitra GUI](https://github.com/user-attachments/assets/b791ed32-5f3d-43cf-95dd-25f97eed3c8c)
-
-## ML Training
-![Training Image 1](https://github.com/user-attachments/assets/7e50597d-9008-4c22-97fe-16625205ff89)
-![Training Image 2](https://github.com/user-attachments/assets/5add8f31-13d1-41d6-8558-8866effa4ad2)
-![Training Image 3](https://github.com/user-attachments/assets/d7899f05-eb08-4677-862a-d390e499e164)
-![Training Image 4](https://github.com/user-attachments/assets/ce70e1a7-6d37-487a-9c02-18d684d4e2fc)
-
 ## Project Image
 ![WhatsApp Image 2025-03-08 at 16 29 14_c6d2534c](https://github.com/user-attachments/assets/b791ed32-5f3d-43cf-95dd-25f97eed3c8c)
 ## ML Training 
