@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi Mitra – कृषि मित्र | Smart Agriculture</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-seedling logo-icon"></i>
+                    <span class="logo-text">Krishi Mitra – कृषि मित्र</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#dashboard" class="nav-link">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-animation"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Smart Farming Assistant for Indian Farmers</h1>
+                <p class="hero-description">
+                    Monitor weather, soil moisture, and rainfall using sensors integrated with Firebase and ESP32. 
+                    Empowering farmers with real-time data for better crop management and increased productivity.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('data')">
+                        <i class="fas fa-chart-line"></i>
+                        View Live Data
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('features')">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Smart Agriculture Features</h2>
+                <p class="section-subtitle">Advanced sensor technology for modern farming</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <h3>DHT22 Sensor</h3>
+                    <p>Real-time temperature and humidity monitoring for optimal crop conditions</p>
+                    <div class="feature-stats">
+                        <span class="stat">±0.5°C Accuracy</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                    <h3>Rain Sensor</h3>
+                    <p>Automated weather alerts and rainfall detection for irrigation planning</p>
+                    <div class="feature-stats">
+                        <span class="stat">24/7 Monitoring</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Soil Moisture</h3>
+                    <p>Precision soil moisture measurement for intelligent irrigation recommendations</p>
+                    <div class="feature-stats">
+                        <span class="stat">Smart Irrigation</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Firebase Integration</h3>
+                    <p>Real-time data synchronization and cloud-based analytics dashboard</p>
+                    <div class="feature-stats">
+                        <span class="stat">Real-time Updates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Data Section -->
+    <section id="data" class="live-data">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Live Sensor Data</h2>
+                <p class="section-subtitle">Real-time monitoring from your farm</p>
+                <div class="last-updated">
+                    Last updated: <span id="lastUpdated">--</span>
+                </div>
+            </div>
+            <div class="data-grid">
+                <div class="data-card temperature">
+                    <div class="data-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <div class="data-content">
+                        <h3>Temperature</h3>
+                        <div class="data-value">
+                            <span id="temperature">--</span>
+                            <span class="unit">°C</span>
+                        </div>
+                        <div class="data-status" id="tempStatus">Normal</div>
+                    </div>
+                </div>
+                <div class="data-card humidity">
+                    <div class="data-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="data-content">
+                        <h3>Humidity</h3>
+                        <div class="data-value">
+                            <span id="humidity">--</span>
+                            <span class="unit">%</span>
+                        </div>
+                        <div class="data-status" id="humidityStatus">Normal</div>
+                    </div>
+                </div>
+                <div class="data-card soil-moisture">
+                    <div class="data-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="data-content">
+                        <h3>Soil Moisture</h3>
+                        <div class="data-value">
+                            <span id="soilMoisture">--</span>
+                            <span class="unit">%</span>
+                        </div>
+                        <div class="data-status" id="soilStatus">Normal</div>
+                    </div>
+                </div>
+                <div class="data-card rainfall">
+                    <div class="data-icon">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                    <div class="data-content">
+                        <h3>Rainfall</h3>
+                        <div class="data-value">
+                            <span id="rainfall">--</span>
+                            <span class="unit">mm</span>
+                        </div>
+                        <div class="data-status" id="rainStatus">No Rain</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Connect with us for smart farming solutions</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>krishimitra@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="#" target="_blank">GitHub Repository</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Krishi Mitra. Made with <i class="fas fa-heart"></i> by Team Krishi Mitra</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#support">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
