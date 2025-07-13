@@ -6,15 +6,14 @@ import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, onValue, off } from 'firebase/database';
 
 // Firebase configuration object
-// Replace with your actual Firebase config
 const firebaseConfig = {
-    apiKey: "your-api-key-here",
-    authDomain: "your-project.firebaseapp.com",
-    databaseURL: "https://your-project-default-rtdb.firebaseio.com/",
-    projectId: "your-project-id",
-    storageBucket: "your-project.appspot.com",
-    messagingSenderId: "123456789",
-    appId: "your-app-id"
+    apiKey: "AIzaSyCTYrddSfIkL3r8MYx5OYF5mVnHEQacm8s",
+    authDomain: "krishi-mitra-e45d0.firebaseapp.com",
+    databaseURL: "https://krishi-mitra-e45d0-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "krishi-mitra-e45d0",
+    storageBucket: "krishi-mitra-e45d0.firebasestorage.app",
+    messagingSenderId: "285192945015",
+    appId: "1:285192945015:web:9b3b17a692d243c580b572"
 };
 
 // Initialize Firebase app
@@ -77,14 +76,14 @@ class SensorDataManager {
     // Listen to Firebase Realtime Database
     listenToFirebaseData() {
         try {
-            const dataRef = ref(database, 'sensorData');
+            const dataRef = ref(database, 'ESP32_SensorData');
             
             onValue(dataRef, (snapshot) => {
                 const data = snapshot.val();
                 if (data) {
                     this.currentData = {
-                        temperature: data.temperature || 0,
-                        humidity: data.humidity || 0,
+                        temperature: data.Temperature || 0,
+                        humidity: data.Humidity || 0,
                         soilMoisture: data.soilMoisture || 0,
                         rainfall: data.rainfall || 0,
                         lastUpdated: data.timestamp || new Date().toISOString()
@@ -137,7 +136,7 @@ class SensorDataManager {
         }
         
         if (isFirebaseConnected && database) {
-            const dataRef = ref(database, 'sensorData');
+            const dataRef = ref(database, 'ESP32_SensorData');
             off(dataRef);
         }
     }
@@ -151,7 +150,7 @@ class SensorDataManager {
     async fetchData() {
         if (isFirebaseConnected) {
             try {
-                const dataRef = ref(database, 'sensorData');
+                const dataRef = ref(database, 'ESP32_SensorData');
                 return new Promise((resolve) => {
                     onValue(dataRef, (snapshot) => {
                         const data = snapshot.val();
@@ -177,9 +176,9 @@ export { generateMockData, isFirebaseConnected };
 // Example Firebase data structure:
 /*
 {
-  "sensorData": {
-    "temperature": 28.5,
-    "humidity": 65,
+  "ESP32_SensorData": {
+    "Temperature": 25,
+    "Humidity": 20,
     "soilMoisture": 45,
     "rainfall": 0,
     "timestamp": "2025-01-08T10:30:00.000Z"
